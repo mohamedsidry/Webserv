@@ -3,7 +3,7 @@
 
 void LoggerError::log(const std::string& message) const
 {
-    std::cerr << "[ERROR] : "<< coloriz(message) << std::endl;
+    std::cout << coloriz( "[ERROR] : "+ message) << std::endl;
 }
 const std::string LoggerError::coloriz(const std::string& text) const
 {

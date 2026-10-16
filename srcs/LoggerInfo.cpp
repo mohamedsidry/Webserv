@@ -3,7 +3,7 @@
 
 void LoggerInfo::log(const std::string& message) const
 {
-    std::cout << "[INFO] : "<< coloriz(message) << std::endl;
+    std::cout << coloriz( "[INFO] : "+ message) << std::endl;
 }
 const std::string LoggerInfo::coloriz(const std::string& text) const
 {

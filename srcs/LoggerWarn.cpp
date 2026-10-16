@@ -3,7 +3,7 @@
 
 void LoggerWarn::log(const std::string& message) const
 {
-    std::cout << "[WARN] : "<< coloriz(message) << std::endl;
+    std::cout << coloriz( "[WARN] : "+ message) << std::endl;
 }
 const std::string LoggerWarn::coloriz(const std::string& text) const
 {
