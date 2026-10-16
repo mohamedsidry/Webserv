@@ -4,4 +4,7 @@
 *.exe
 *.out
 /test
-
+webserv
+build
+*.ini
+/tests
