@@ -11,10 +11,10 @@ class ExceptionManager
         ExceptionFactory source;
         AException* exception;
         static ExceptionManager _instance;
+        ExceptionManager();
         ExceptionManager(const ExceptionManager&);
         ExceptionManager& operator=(const ExceptionManager&);
     public:
-        ExceptionManager();
         ~ExceptionManager();
         void raise_exception(const std::string& exception);
         static ExceptionManager& instance(void);
