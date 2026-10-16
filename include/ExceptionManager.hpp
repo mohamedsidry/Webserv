@@ -10,7 +10,6 @@ class ExceptionManager
     private:
         ExceptionFactory source;
         AException* exception;
-        static ExceptionManager _instance;
         ExceptionManager();
         ExceptionManager(const ExceptionManager&);
         ExceptionManager& operator=(const ExceptionManager&);

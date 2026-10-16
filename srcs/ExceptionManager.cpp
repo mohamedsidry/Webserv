@@ -2,8 +2,6 @@
 #include <iostream>
 
 
-ExceptionManager ExceptionManager::_instance;
-
 ExceptionManager::ExceptionManager(){}
 
 ExceptionManager::~ExceptionManager(){
@@ -13,7 +11,11 @@ ExceptionManager::~ExceptionManager(){
 }
 
 
-ExceptionManager& ExceptionManager::instance(void){return (_instance);}
+ExceptionManager& ExceptionManager::instance(void)
+{
+    static ExceptionManager instance;
+    return (instance);
+}
 
 void ExceptionManager::raise_exception(const std::string& target)
 {

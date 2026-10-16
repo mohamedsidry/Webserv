@@ -1,8 +1,6 @@
 #include "../include/LogManager.hpp"
 
 
-LogManager LogManager::_instance;
-
 LogManager::LogManager(){}
 
 LogManager::~LogManager(){}
@@ -28,5 +26,6 @@ void LogManager::console_log(unsigned int level, const std::string& message)
 
 LogManager& LogManager::instance(void)
 {
-    return (_instance);
+    static LogManager instance;
+    return (instance);
 }

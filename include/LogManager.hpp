@@ -8,7 +8,6 @@
 class LogManager
 {
     private:
-        static LogManager _instance;
         LoggerMapper       loggers;
         LogManager();
         LogManager(const LogManager& copy);
