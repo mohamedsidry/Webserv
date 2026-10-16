@@ -1,10 +1,6 @@
 #include "../include/main.hpp"
 
 
-void lc()
-{
-    system("leaks webserv");
-}
 int main(int argc, char *argv[])
 {
     try 
@@ -15,10 +11,7 @@ int main(int argc, char *argv[])
     } catch(const std::exception& e)
     {
         LogManager::instance().console_log(ERROR_LEVEL, e.what());
-        LogManager::instance().console_log(WARN_LEVEL, e.what());
-        LogManager::instance().console_log(INFO_LEVEL, e.what());
     }
-    atexit(lc);
     return (EXIT_FAILURE);
 }
 
