@@ -19,6 +19,7 @@ HPP = include/main.hpp \
 	include/LoggerMapper.hpp \
 	include/LoggerWarn.hpp \
 	include/LogManager.hpp \
+	include/Utils.hpp \
 	include/ValidationUtils.hpp 
 
 
@@ -34,6 +35,7 @@ SRCS = srcs/main.cpp \
 	srcs/LoggerMapper.cpp \
 	srcs/LoggerWarn.cpp \
 	srcs/LogManager.cpp \
+	srcs/Utils.cpp \
 	srcs/ValidationUtils.cpp 
 
 OBJS = $(SRCS:%.cpp=$(OBJS_DIR)/%.o)
