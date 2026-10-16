@@ -1,9 +1,11 @@
 #include "../include/ExceptionFactory.hpp"
+#include <iostream>
 
 ExceptionFactory::ExceptionFactory()
 {
     exceptions.insert(std::pair<const std::string, ExceptionGenerator>("argc", &ExceptionsWrapper::ExceptionArgc::clone));
     exceptions.insert(std::pair<const std::string, ExceptionGenerator>("default", &ExceptionsWrapper::ExceptionDefault::clone));
+    exceptions.insert(std::pair<const std::string, ExceptionGenerator>("conf", &ExceptionsWrapper::ExceptionConfigFile::clone));
 }
 
 

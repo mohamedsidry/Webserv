@@ -21,6 +21,13 @@ class ExceptionsWrapper
                 void raise() const;
                 static AException* clone(void);
         };
+        class ExceptionConfigFile : public AException
+        {
+            public:
+                const char * what(void) const throw();
+                void raise() const;
+                static AException* clone(void);
+        };
 };
 
 

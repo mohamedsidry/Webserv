@@ -4,6 +4,7 @@
 #include <string>
 #include "ExceptionManager.hpp"
 #include "AAppConstants.hpp"
+#include "Utils.hpp"
 
 class ValidationUtils
 {
