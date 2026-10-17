@@ -14,6 +14,8 @@ class Utils
     
     public:
         static bool is_all_space(const std::string& str);
+        static std::string trim_space(const std::string& str);
+
 
 };
 
